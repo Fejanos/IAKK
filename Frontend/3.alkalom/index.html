@@ -1,0 +1,209 @@
+<!-- Ez egy komment: felhasználó számára nem látható -->
+<!DOCTYPE html> <!-- Dokumentumtípus deklaráció, böngészőnek jelzi -->
+<!-- <nyitótag>Tartalom</zárótag> általában -->
+<html lang="hu"> <!-- lang attribútum, nyelvezet meghatározás -->
+<head>
+    <meta charset="UTF-8"> <!-- karakterkódolás -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- megjelenítési szélesség a eszközképernyőre, kezdő nagyítás -->
+    
+    <title>HTML címkék</title> <!-- weblap címe -->
+</head>
+
+<!-- Weblap törzse -->
+<body>
+    
+    <!-- Címsorok 1-6 -->
+    <h1>Címsor1</h1>
+    <h2>Címsor2</h2>
+    <h3>Címsor3</h3>
+    <h4>Címsor4</h4>
+    <h5>Címsor5</h5>
+    <h6>Címsor6</h6>
+
+    <!-- Paragrafus - bekezdés -->
+    <p>Ez egy bekezdés.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ducimus.</p>
+
+    <!-- br - sortörés -->
+    <p>Lorem ipsum dolor sit amet consectetur 
+        <br>adipisicing elit. Sit, ullam.</p>
+
+    <!-- vizszintes vonal -->
+    <hr>
+
+    <!-- Alapvető formázások -->
+    <!-- félkövér -->
+    <b>Lorem ipsum dolor sit amet.</b>
+    <br>
+    <!-- dőlt -->
+    <i>Lorem ipsum dolor sit amet.</i>
+    <br>
+    <!-- áthúzott -->
+    <s>Lorem ipsum dolor sit amet.</s>
+    <br>
+    <!-- aláhúzott -->
+    <u>Lorem ipsum dolor sit amet.</u>
+    <br>
+
+    <!-- Egymásba ágyazott szöveg -->
+    <b><u>Lorem ipsum dolor sit amet.</u></b>
+
+    <!-- Felső index -->
+    <p>X<sup>2</sup></p>
+    <!-- Alsó index -->
+    <p>H<sub>2</sub>O</p>
+
+    <!-- Blokk idézet -->
+    <blockquote>"Tedd, vagy ne tedd, de ne próbáld!"</blockquote>
+
+    <!-- Szövegkiemelés -->
+    <mark>Kiemelt szöveg</mark>
+
+    <hr>
+
+    <!-- Listák, felsorolás -->
+    <!-- rendezetlen lista -->
+    <ul>
+        <li>Első elem</li>
+        <li>Második elem</li>
+        <li>Harmadik elem</li>
+    </ul>
+    <!-- rendezett lista -->
+    <ol>
+        <li>Első</li>
+        <li>Második</li>
+        <li>Harmadik</li>
+    </ol>
+
+    <hr>
+
+    <!-- Kép beszúrás -->
+    <!-- style="width: 300px; height: 300px;" -->
+    <img src="./img/cica.jpg" alt="cica kép">
+
+    <!-- Illusztrációk és képaláírások -->
+    <figure>
+        <img src="./img/cica.jpg" alt="cica">
+        <figcaption>Ez egy cica.</figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- Hivatkozás, anchor-horgony -->
+    <!-- href: célcím - url, lokális fájl, kép, email küldés -->
+    <!-- target:
+        - _blank: új fül
+        - _self: aktuális fül -->
+    <!-- title: rövid leírás a linkről, egér rávitellel -->
+    <a href="./img/cica.jpg" target="_blank" title="rövid leírás">Kattints ide!</a>
+
+    <!-- Táblázat -->
+    <table style="border: 1px solid black">
+
+        <!-- Táblázat címe -->
+        <caption>Táblázat cím</caption>
+
+        <!-- Fejrész, fejléc -->
+        <thead>
+            <!-- sor -->
+            <tr>
+                <!-- Kiemelt cella -->
+                <th>Fej: Első sor, első cella</th>
+                <th>Fej: Első sor, második cella</th>
+                <th>Fej: Első sor, harmadik cella</th>
+            </tr>
+        </thead>
+
+        <!-- Táblázat tartalma -->
+        <tbody>
+            <tr>
+                <!-- Cella -->
+                <td>Második sor, első cella</td>
+                <td>Második sor, második cella</td>
+                <td>Második sor, harmadik cella</td>
+            </tr>
+            <tr>
+                <!-- Cella -->
+                <td>Harmadik sor, első cella</td>
+                <td>Harmadik sor, második cella</td>
+                <td>Harmadik sor, harmadik cella</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <!-- Input/Label mezők -->
+    <label for="teljesNev">Név:</label>
+    <input type="text" name="Nev" id="nev"> <!-- Szövegesmező -->
+    
+    <br><br>
+    <label for="jelszo">Jelszó:</label>
+    <input type="password" name="Pass" id="pass"> <!-- Jelszó -->
+
+    <br><br>
+    <label for="eletkor">Életkor:</label>
+    <input type="number" name="Eletkor" id="eletkor"> <!-- Szám -->
+
+    <br><br>
+    <label for="szulido">Szül. Dátum:</label>
+    <input type="date" name="Szulido" id="szulido"> <!-- Dátum -->
+
+    <br><br>
+    <label for="szoveges">Szövegdoboz:</label>
+    <textarea name="szovegdoboz" id="" cols="25px" rows="10px"></textarea>
+
+    <hr>
+
+    <!-- Rádiógombok -->
+    <label for="">
+        <input type="radio" name="Ferfi" id="">Férfi
+    </label>
+    <br>
+    <label for="">
+        <input type="radio" name="No" id="">Nő
+    </label>
+    <br>
+    <label for="">
+        <input type="radio" name="Egyeb" id="">Egyéb
+    </label>
+
+    <!-- Kijelölő négyzetek -->
+    <br><br>
+    <label for="">
+        <input type="checkbox" name="Hobbi1" id="">Hobbi1
+    </label>
+    <br>
+    <label for="">
+        <input type="checkbox" name="Hobbi2" id="">Hobbi2
+    </label>
+    <br>
+    <label for="">
+        <input type="checkbox" name="Hobbi3" id="">Hobbi3
+    </label>
+
+    <hr>
+
+    <!-- Select, option -->
+    <select name="gyorsetterem" id="">
+        <option selected="selected">Válasszon egy éttermet</option>
+        <optgroup label="Étterem">
+            <option value="mc">MC Donalds</option>
+            <option value="kfc">KFC</option>
+            <option value="brking">BurgerKing</option>
+        </optgroup>
+        <optgroup label="Kávézó">
+            <option value="cicakave">Cicakávézó</option>
+        </optgroup>
+    </select>
+
+    <hr>
+
+    <!-- Gomb -->
+    <button>Kattints</button>
+
+</body>
+
+</html>
