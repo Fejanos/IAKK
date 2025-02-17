@@ -1,0 +1,158 @@
+p{
+    color: red;
+}
+
+/* Id - azonosító - #idNév {} 
+pl. header, nav, footer */
+/* Class - osztály - .classNév {} */
+
+.boxmodel{
+    /* Szöveg középre igazítás */
+    text-align: center;
+
+    /* Háttérszín beállítása */
+    background-color: aqua;
+
+    /* Keret, szegély, 
+    border: vastagság, vonaltípus, szín */
+    border: 2px solid black;
+
+    /* doboz szélessége */
+    width: 300px;
+
+    /* belső térköz: padding: felső-alsó bal-job */
+    padding: 45px 30px;
+
+    /* külső térköz: minden oldalon 30px */
+    margin: 30px;
+    /*margin-top: ; */
+
+    /* box model hatását szabályozza
+    a padding és a border beleszámít width-be */
+    box-sizing: border-box;
+}
+
+body{
+    /* egész oldal margóját és 
+    paddingjét lenullázzuk */
+    margin: 0;
+    padding: 0;
+
+    /* inden elemre box model 
+    alapértelmezetten */
+    box-sizing: border-box;
+
+    /* blokk szintű igazítás */
+    /* width doboz szélessége a fele */
+    width: 50%;
+    /* vízszintesen középre automatikusan */
+    margin: 0 auto;
+}
+
+#egyedi{
+    /* Háttérszín rgb segítségével */
+    background-color: rgb(53, 120, 201);
+
+    /* szélesség 500px */
+    width: 500px;
+
+    /* betűszín piros */
+    color: red;
+}
+
+/* ul.nav csak azokra a listákra, amelyek
+rendelkeznek a .nav osztállyal */
+ul.nav{
+    /* Nav menü háttérszín */
+    background-color: lightcoral;
+
+    /* listaelemek alapértelmezett
+    stílusának kikapcsolása (pötty) */
+    list-style-type: none;
+
+    /* lista margóját nullázzuk */
+    margin: 0;
+
+    /* menü magassága a képernyő 15%-a */
+    height: 15vh;
+
+    /* szöveg középre */
+    text-align: center;
+}
+
+/* ul.nav belüli li (listaelemek) */
+ul.nav li{
+    /* elemek egymás mellé helyezkedjenek */
+    display: inline-block;
+
+    /* belső térköz: fent-lent 10, oldalt 30 */
+    padding: 10px 30px;
+
+    /* betűméret 20px */
+    font-size: 20px;
+}
+
+/* ul.nav belül li azon belül az a elem */
+ul.nav li a{
+    /* linkek színe */
+    color: white;
+
+    /* alapértelmezett aláhúzás eltüntetése */
+    text-decoration: none;
+
+    /* színváltozás animáció 1 mp alatt */
+    transition: 1s;
+}
+
+/* ... ha link fölé visszük egeret */
+ul.nav li a:hover{
+    /* betűszín módosítása hover állapotban*/
+    color: aqua;
+
+    /* aláhúzás hozzáadása hover állapotban */
+    text-decoration: underline;
+}
+
+div.absolute{
+    /* szélesség */
+    width: 300px;
+
+    /* oldal bal felső sarkához viszonyít */
+    position: absolute;
+
+    /* háttérszín */
+    background-color: yellow;
+
+    /* elhelyezkedés balról 500px-re helyezkedik el */
+    left: 500px;
+
+    /* fentről 0px */
+    top: 0;
+}
+
+div.relative{
+    /* a eredeti helyzetéhez képest mozgatjuk */
+    position: relative;
+
+    /* háttérszín */
+    background-color: bisque;
+
+    /* szélesség 300px */
+    width: 300px;
+
+    /* eredeti helyzetéhez képest 
+    50px-el fentről lejjebb kerül */
+    top: 50px;
+
+    /* eredeti helyzetéhez képest
+    50px-el jobbra */
+    left: 50px;
+}
+
+#hidden{
+    /* elem láthatatlan, de helyet foglal */
+    /* visibility: hidden; */
+
+    /* az elem teljesen eltűnik és nem foglal helyet */
+    display: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- stíluslap hivatkozás -->
+    <!-- külső stílus III. -->
+     <link rel="stylesheet" href="styles.css">
+
+    <!-- belső stílus II. -->
+    <style>
+        /* szelektor{ tulajdonság: érték; } */
+        /* Az összes paragrafusra igaz lesz */
+        p{
+            /*background-color: blue;*/
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- inline stílus I. -->
+    <h1 style="color: red;">Üdvözöllek!</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+    <!-- csoportosítás, stílus -->
+    <div class="boxmodel">
+        Box model példa
+    </div>
+
+    <div class="boxmodel" id="egyedi">
+        Box model példa
+    </div>
+
+    <ul class="nav">
+        <li><a href="#">Főoldal</a></li>
+        <li><a href="#">Rólunk</a></li>
+        <li><a href="#">Kapcsolat</a></li>
+    </ul>
+
+    <div class="absolute" id="hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae quas repudiandae saepe. Maxime, labore cumque odio sed, at esse commodi dolore ipsa nobis nesciunt laudantium impedit! Neque, dolorem omnis.
+    </div>
+
+    <div class="relative">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, a fugit dolorum iusto laudantium veniam accusamus facilis iste voluptatum corrupti debitis amet, non blanditiis repellendus quae. Quas earum distinctio veritatis.
+    </div>
+
+</body>
+</html>
